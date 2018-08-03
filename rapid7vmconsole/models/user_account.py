@@ -54,7 +54,8 @@ class UserAccount(object):
             self.full_name = full_name
         if id is not None:
             self.id = id
-        self.name = name
+        if name is not None:
+            self.name = name
 
     @property
     def full_name(self):

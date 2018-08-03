@@ -49,7 +49,8 @@ class GroupAccount(object):
 
         if id is not None:
             self.id = id
-        self.name = name
+        if name is not None:
+            self.name = name
 
     @property
     def id(self):
